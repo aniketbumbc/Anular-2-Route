@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-details',
@@ -9,19 +9,17 @@ import { Component, OnInit } from '@angular/core';
     </p>
     </body>
   `,
-  styles: [ `
+  styles: [`
 #p1{color:midnightblue;
 font-family: AngsanaUPC;
 font-size: 40px;
-
 }
-` ]
+`]
 })
-export class DetailsComponent implements OnInit {
+export class DetailsComponent {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
   }
+
 
 }

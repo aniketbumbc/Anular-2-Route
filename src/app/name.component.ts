@@ -25,22 +25,25 @@ h1{color: blueviolet;}
 
 })
 export class NameComponent implements OnDestroy {
-  private subscription:Subscription;
-  private  id:string;
-  constructor(private router:Router,private activaterouter:ActivatedRoute) {
-    this.subscription= activaterouter.params.subscribe(
-      (param:any)=>this.id=param['id']
+  private subscription: Subscription;
+  private id: string;
+
+  constructor(private router: Router, private activaterouter: ActivatedRoute) {
+    this.subscription = activaterouter.params.subscribe(
+      (param: any) => this.id = param['id']
     );
 
   }
 
-  onclick(){
+  onclick() {
     alert("want to go home");
-this.router.navigate(['/'],{queryParams:{'Homme':100}});
+    this.router.navigate(['/'], {queryParams: {'Homme': 100}});
   }
+
   ngOnInit() {
   }
-  ngOnDestroy(){
+
+  ngOnDestroy() {
     this.subscription.unsubscribe();
   }
 
