@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<h1 align="center"> Route Implementation </h1>
+<hr>
+<a [routerLink]="['']">Home</a>
+<a [routerLink]="['user']">User</a>
+<a [routerLink]="['name',id.value]">Name</a>
+<input type="text" #id (input)="0">
+<hr>
+<p align="center">
+<router-outlet></router-outlet>
+</p>
