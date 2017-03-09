@@ -1,8 +1,8 @@
 <h1 align="center"> Route Implementation </h1>
 <hr>
-<a [routerLink]="['']">Home</a>
-<a [routerLink]="['user']">User</a>
-<a [routerLink]="['name',id.value]">Name</a>
+<a [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+<a [routerLink]="['user']" routerLinkActive="active">User</a>
+<a [routerLink]="['name',id.value]" routerLinkActive="active">Name</a>
 <input type="text" #id (input)="0">
 <hr>
 <p align="center">

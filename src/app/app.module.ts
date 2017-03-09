@@ -8,13 +8,17 @@ import { NameComponent } from './name.component';
 import { DetailsComponent } from './details.component';
 import {routing} from "./app.routing";
 import { UserComponent } from './user.component';
+import { UserDetailsComponent } from './user-details.component';
+import { UserEditComponent } from './user-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NameComponent,
     DetailsComponent,
-    UserComponent
+    UserComponent,
+    UserDetailsComponent,
+    UserEditComponent
   ],
   imports: [
     BrowserModule,
